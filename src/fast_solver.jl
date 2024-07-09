@@ -24,7 +24,7 @@ leafLevel   =   octree.levels[nLevels];
 ZnearCSC     =   calZnearCSC(leafLevel, geosInfo, bfsInfo);
 
 # 构建矩阵向量乘积算子
-Zopt  =   MLMFAIterator(ZnearCSC, octree, geosInfo, bfsInfo);
+Zopt  =   MLFMAIterator(ZnearCSC, octree, geosInfo, bfsInfo);
 
 ## 根据近场矩阵和八叉树计算 SAI 左预条件
 Zprel    =   sparseApproximateInversePl(ZnearCSC, leafLevel)
@@ -35,5 +35,7 @@ V    =   getExcitationVector(geosInfo, nbf, source);
 # 求解
 ICoeff, ch   =   solve(Zopt, V; solverT = solverT, Pl = Zprel, rtol = rtol, restart = restart);
 
+using LinearAlgebra
+@info norm(ZnearCSC) norm(V)
 # RCS
 RCSθsϕs, RCSθsϕsdB, RCS, RCSdB = radarCrossSection(θs_obs, ϕs_obs, ICoeff, geosInfo) 

@@ -24,7 +24,7 @@ leafLevel   =   octree.levels[nLevels];
 ZnearCSC     =   calZnearCSC(leafLevel, geosInfo, bfsInfo);
 
 # 构建矩阵向量乘积算子
-Zopt  =   MLMFAIterator(ZnearCSC, octree, geosInfo, bfsInfo);
+Zopt  =   MLFMAIterator(ZnearCSC, octree, geosInfo, bfsInfo);
 
 ## 根据近场矩阵和八叉树计算 SAI 左预条件
 Zprel    =   ilu(sparse(ZnearCSC); τ = 1e-3);#sparseApproximateInversePl(ZnearCSC, leafLevel)

@@ -3,7 +3,7 @@ using Pkg
 Pkg.activate(joinpath(@__DIR__, ".."))
 
 ## 安装包
-pkgs = ["https://gitee.com/deltaeecs/IterativeSolvers.jl.git",]
+pkgs = ["https://github.com/deltaeecs/IterativeSolvers.jl.git",]
 
 map(pkgs) do pkg
     try
