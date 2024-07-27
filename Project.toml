@@ -1,7 +1,7 @@
 name = "MoM_AllinOne"
 uuid = "ed5fc19a-51e0-403b-bf3b-cfeba61ff831"
 authors = ["deltaeecs <1225385871@qq.com>"]
-version = "0.0.1"
+version = "0.1.0"
 
 [deps]
 CSV = "336ed68f-0bac-5ca0-87d4-7b16caf5d00b"
