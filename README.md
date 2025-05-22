@@ -60,7 +60,7 @@ MoM_AllinOne 程序的基本构成如下图所示:![MoM_AllinOne 包结构](deps
     或 git clone 到本地：
 
     ```powwershell
-    git clone https://gitee.com/deltaeecs/MoM_AllinOne.jl.git
+    git clone https://github.com/deltaeecs/MoM_AllinOne.jl.git
     ```
 
     紧接着，在本包路径下（xxx/MoM_AllinOne）运行如下命令安装相关依赖包：
