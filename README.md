@@ -1,3 +1,10 @@
+> **ARCHIVED / 已归档** — this repository is read-only and no longer maintained.
+>
+> All functionality has been consolidated into **EMMoMSuite.jl** (the latest version of the MoM framework):
+> https://github.com/deltaeecs/EMMoMSuite.jl
+>
+> Please use `using EMMoMSuite` instead (`Pkg.add("EMMoMSuite")`).
+
 ![MoM](./docs/src/assets/logo.png)
 # MoM_AllinOne
 
@@ -60,7 +67,7 @@ MoM_AllinOne 程序的基本构成如下图所示:![MoM_AllinOne 包结构](deps
     或 git clone 到本地：
 
     ```powwershell
-    git clone https://github.com/deltaeecs/MoM_AllinOne.jl.git
+    git clone https://gitee.com/deltaeecs/MoM_AllinOne.jl.git
     ```
 
     紧接着，在本包路径下（xxx/MoM_AllinOne）运行如下命令安装相关依赖包：

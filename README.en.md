@@ -1,3 +1,10 @@
+> **ARCHIVED / 已归档** — this repository is read-only and no longer maintained.
+>
+> All functionality has been consolidated into **EMMoMSuite.jl** (the latest version of the MoM framework):
+> https://github.com/deltaeecs/EMMoMSuite.jl
+>
+> Please use `using EMMoMSuite` instead (`Pkg.add("EMMoMSuite")`).
+
 # MoM_AllinOne
 
 #### Description
